@@ -21,6 +21,9 @@ namespace CashSearch
             var select = Console.ReadLine();
                         
             var sql = $"SELECT count FROM tab_products_stock JOIN tab_products ON tab_products_stock.product_id = tab_products.id WHERE product_id = {select}";
+          
+           var sql=$"INSERT INTO host1323541_sbd04.table_students (first_name, last_name, faculty, is_study)
+            VALUES ('Igor', 'Ivanov', 'SoftDev', 1);"
            
             var command = new MySqlCommand
             {
